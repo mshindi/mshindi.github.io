@@ -37,11 +37,17 @@
               </nav> 
   <!--Hero Image  section-->       
 <section id = "hero image">
-        <div class="hero-image">
-                <div class="hero-text">
-                  <h1>I am John Doe</h1>
-                  <p>And I'm a Photographer</p>
-                  <button>Hire me</button>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="..." alt="First slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="..." alt="Second slide">
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="..." alt="Third slide">
+                  </div>
                 </div>
               </div>
 </section>
@@ -49,34 +55,5 @@
 <p>I'm hosted with GitHub Pages.</p>
 </body>
 
-<style>
 
-
-
-/* The hero image */
-.hero-image {
-    /* The image used */
-    background-image: url("hero.jpg");
-
-    /* Set a specific height */
-    height: 50%;
-
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-/* Place text in the middle of the image */
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-}
-
-</style>
 </html>
