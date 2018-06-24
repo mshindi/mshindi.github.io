@@ -10,6 +10,15 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>  
         <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121321917-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-121321917-1');
+</script>
 
       </head>
 
@@ -29,9 +38,14 @@
                       <a class="nav-link" href="#about" style="color: white;" >About Me</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#" style="color: white;">Pricing</a>
+                      <a class="nav-link" href="#skills" style="color: white;">Skills</a>
                     </li>
-                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="#timeline" style="color: white;">Timeline</a>
+                    </li>
+                    <li class="nav-item">
+                       <a class="nav-link" href="#contact" style="color: white;">Contact</a>
+                     </li>
                   </ul>
                   
                 </div>
@@ -40,16 +54,17 @@
 <section id = "hero_image">
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active" style="max-height: 660px; font-family: 'Ubuntu Mono', monospace;">
+              <div class="carousel-item active" style="margin-top: ; max-height: 705px; font-family: 'Ubuntu Mono', monospace;">
                     <img class="d-block w-100 " src="hero.jpg" alt="First slide" style="opacity: 0.9;  ">
+                   <!--caption on carsoule image-->
                     <div class="carousel-caption d-none d-md-block" style="text-align: left;text-shadow: 1px 1px 2px black; font-size:2.5vw; ">
                       <p class=""><span style="color: green;">mshindi</span>:<span style="color: blue;">~</span>$ python intro.py </p>
                       <p>Hello World!</p>
                       <p>My name is Victor Mshindi, I’m a software developer & digital story teller from Nairobi, Kenya. </p>
                       <p>Find out more bellow. </p>
                       <p><span style="color: green;">mshindi</span>:<span style="color: blue;">~</span>$ </p>
-
                     </div>
+                    <!--caption end-->
                   </div>
                 </div>
               </div>
@@ -68,9 +83,22 @@
       </div>
 </section>
 
-<section style="margin-top: 5%;">
+<section style="margin-top: 5%;" id="skills">
+
 
 </section>
+
+<section style="margin-top: 5%;" id="timeline">
+
+
+  </section>
+  <section style="margin-top: 5%;" id="cv">
+
+
+    </section>
+   <footer id="contact">
+
+   </footer> 
 </body>
 <style>
   .typewriter {
@@ -94,6 +122,10 @@
 @keyframes blink-caret {
   from, to { border-color: transparent }
   10% { border-color: white; }
+}
+.carousel-caption {
+    top: 18%;
+    bottom: auto;
 }
 </style>
 
