@@ -9,52 +9,92 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>  
-    </head>
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+
+      </head>
 
 <body> 
     <!--Navigation bar-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Navbar</a>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
+                <a class="navbar-brand" href="http://mshindi.github.io" style="color: white;">Victor Mshindi</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="#hero_image" style="color: white;">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Features</a>
+                      <a class="nav-link" href="#about" style="color: white;" >About Me</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Pricing</a>
+                      <a class="nav-link" href="#" style="color: white;">Pricing</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link disabled" href="#">Disabled</a>
-                    </li>
+                    
                   </ul>
+                  
                 </div>
               </nav> 
   <!--Hero Image  section-->       
-<section id = "hero image">
+<section id = "hero_image">
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="d-block w-100 h-50" src="https://images.unsplash.com/photo-1527266237111-a4989d028b4b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=46e6e37fb370279f6d6f5f5964f8fb9e&auto=format&fit=crop&w=1050&q=80" alt="First slide">
-                    <div class="carousel-caption d-none d-md-block">
-                      <p>mshindi:~$ python intro.py </p>
+                  <div class="carousel-item active" style="max-height: 660px; font-family: 'Ubuntu Mono', monospace;">
+                    <img class="d-block w-100 " src="hero.jpg" alt="First slide" style="opacity: 0.9;  ">
+                    <div class="carousel-caption d-none d-md-block" style="text-align: left;text-shadow: 1px 1px 2px black; font-size:2.5vw; ">
+                      <p class=""><span style="color: green;">mshindi</span>:<span style="color: blue;">~</span>$ python intro.py </p>
                       <p>Hello World!</p>
-                      <p>My name is Victor Mshindi, I’m a software developer & digital story teller from Nairobi Kenya </p>
-                      <p>Find out more bellow </p>
+                      <p>My name is Victor Mshindi, I’m a software developer & digital story teller from Nairobi, Kenya. </p>
+                      <p>Find out more bellow. </p>
+                      <p><span style="color: green;">mshindi</span>:<span style="color: blue;">~</span>$ </p>
 
                     </div>
                   </div>
                 </div>
               </div>
 </section>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<section id="about" style="margin-top: 5%;">
+    <div class="container">
+        <div class="row">
+        <div class="col-sm" style="margin-left: -10%;">
+        <img src="victor.png" class="img-rounded" alt="Cinque Terre" width="428" height="320"> 
+        </div>
+        <div class="col-sm" style="margin-left: -30%">
+          <h2>About Me</h2>
+          <p style="font-size:1.7vw;"> I’ve loved tech since I was a little lid. I did not know what or who I would become but I knew Tech would be a part of it. Today I’m a software dev Mainly dealing with full stack web dev and I’m also a digital story teller. To me digital story telling is using digital technologies to tell any story from phot. Which could in the form of a photo, video, article or social media posts.</p>
+        </div>
+      </div>
+      </div>
+</section>
 
+<section style="margin-top: 5%;">
+
+</section>
+</body>
+<style>
+  .typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(100, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  10% { border-color: white; }
+}
+</style>
 
 </html>
